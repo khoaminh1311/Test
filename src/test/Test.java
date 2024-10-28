@@ -11,7 +11,7 @@ public class Test {
       //nhập mssv
        System.out.print("Nhap MSSV: ");
        long num = keyboard.nextLong();
-       keyboard.nextLine();
+       keyboard.nextLine(); //xóa bỏ ký tự xuống dòng còn lại
        System.out.println("MSSV: " + num);
 //       nhập tên lớp
        System.out.print("Nhap ten lop: ");
