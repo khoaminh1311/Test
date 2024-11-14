@@ -5,11 +5,13 @@ import java.util.Scanner;
 public class REVERSE_STRING {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the string to reverse: ");
-        String word = scanner.nextLine();
-        StringBuffer sb = new StringBuffer(word);
-        sb.reverse();
-        System.out.println("Reversed string: " + sb);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the string: ");
+        String input = sc.nextLine();
+        String reversedInput = "";
+        for (int i = input.length() - 1; i >= 0; i--) {
+            reversedInput = reversedInput + input.charAt(i);
+        }
+        System.out.println("Reversed string: "+reversedInput);
     }
 }
